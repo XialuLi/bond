@@ -3,6 +3,10 @@ language: csharp
 os:
     - linux
     - osx
+cache:
+    directories:
+        - compiler/.cabal-sandbox
+        - cs/packages
 env:
     - BOND_LANG=cpp-clang
     - BOND_LANG=cpp-gcc
